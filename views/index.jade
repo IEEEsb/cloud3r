@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	div#files.col-xs-12.col-sm-5.first-row
+		ul.nav.nav-tabs
+			li.active(role="presentation"): a.files#files-stls(href="#stls") STLS
+			li(role="presentation"): a.files#files-gcodes(href="#gcodes") Gcodes
+			li(role="presentation"): a.files#files-configs(href="#conf") Conf
+		div.tab-content
+			div.table-responsive
+				table.table#files-table
+					thead
+						tr
+							th Name
+							th Size
+							th Actions
+					tbody
+				nav#files-pagination
+					ul.pagination
+				
+	
+	div#viewer-container.col-xs-12.col-sm-7.first-row
+		div#viewer
+			canvas#canvas(width="100%", height="100%")
+			div#buttons
+				button#slice.btn.btn-success Slice!
+			
+	div#settings-container.col-xs-12.col-sm-12.second-row
+		ul.nav.nav-tabs
+			li.active(role="presentation"): a.settings#settings-print(href="#") Print
+			li(role="presentation"): a.settings#settings-printer(href="#") Printer and filament
+		div#settings.tab-content
+			
+	div.clear

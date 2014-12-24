@@ -1,0 +1,143 @@
+body {
+	padding-left: 50px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.tab-content {
+	padding: 9px 15px;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-left-radius: 4px
+}
+
+.first-row {
+	height: 60%;
+}
+.second-row {
+	height: 40%;
+}
+
+#viewer {
+	padding: 9px 15px;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	height: 100%
+}
+
+#viewer {
+
+}
+
+#settings-container {
+	margin-top: 15px;
+}
+
+#settings ul {
+	padding: 0px;
+}
+
+#settings li {
+	list-style-type: none;
+}
+
+#settings li label {
+	float:left;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar {
+	background: #00B7FF;
+	position: absolute;
+	top: 0px;
+	height: 50px;
+	right: 20px;
+	left: 20px;
+}
+
+#files-pagination {
+	float: right;
+	margin-left: -10px;
+	margin-bottom: -10px;
+}
+
+#content {
+	position: absolute;
+	top: 70px;
+	bottom: 80px;
+	right: 20px;
+	left: 20px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	right: 20px;
+	left: 20px;
+	margin-top: 20px;
+	background: #00B7FF;
+}
+
+#files {
+	position: relative;
+}
+
+#files > .tab-content, #settings {
+	position: absolute;
+	bottom: 0px;
+	top: 41px;
+	right: 15px;
+	left: 15px;
+	overflow-y: scroll;
+}
+
+.clear {
+	clear: both;
+}
+
+.table-responsive {
+}
+
+@media all and (max-width: 768px) {
+	.first-row {
+		height: auto;
+	}
+	.second-row {
+		height: auto;
+	}
+
+	#viewer-container {
+		margin-top: 15px;
+	}
+	#viewer, #settings {
+		height: auto;
+	}
+	#files > .tab-content, #files, #settings-container, #settings-container > .tab-content {
+		position:inherit
+	}
+	#footer {
+		position: inherit;
+		background: #fca;
+	}
+
+	#content, .navbar {
+		display: block;
+		position: inherit;
+	}
+}
+
